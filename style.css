@@ -1,0 +1,72 @@
+html {
+    background-image: url(BG2.jpg);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(BG2.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+}
+form {
+    background-color: aquamarine;
+    display: inline-block;
+    text-align: left;
+    padding: 25px;
+    border-radius: 90px;
+    border: 1px solid white;
+    background-color: cyan;
+}
+label {
+    margin-bottom: 10px;
+}
+textarea {
+    width: 95%;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+select, input {
+    padding: 5x;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color:  #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+pre {
+    white-space: pre-wrap;
+    text-align: left;
+}
+h1 {
+    animation: slideIn 2s ease-in-out;
+    padding: 10px; /* Padding to provide some space around the text */
+    font-weight: bolder;
+    color: snow;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #218838;
+        }
