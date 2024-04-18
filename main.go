@@ -67,8 +67,20 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "index.html")
 }
 
+// func main() {
+// 	// Serve static files
+// 	fs := http.FileServer(http.Dir("./"))
+// 	http.Handle("/", fs)
+// 	// HTTP server setup
+// 	http.HandleFunc("/", indexHandler)
+// 	http.HandleFunc("/generate", generateHandler)
+// 	http.ListenAndServe(":8080", nil)
+// }
+
 func main() {
+	fs := http.FileServer(http.Dir("style"))
+	http.Handle("/style/",http.StripPrefix("/style",fs))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/generate", generateHandler)
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":8080", nil)
 }

@@ -3,7 +3,7 @@ html {
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(BG2.jpg);
+    background-image: url(style/css/BG2.jpg);
     background-repeat: no-repeat;
     text-align: center;
     margin: 20px;
@@ -56,17 +56,3 @@ h1 {
         transform: translateX(0);
     }
 }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .download-btn:hover {
-            background-color: #218838;
-        }
